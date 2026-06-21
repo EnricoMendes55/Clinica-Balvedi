@@ -154,7 +154,13 @@
   text-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
 }
 
+.titleLight {
+  font-weight: 400;
+  color: rgba(245, 245, 240, 0.85);
+}
+
 .titleAccent {
+  font-weight: 800;
   background: linear-gradient(135deg, #dce2c6 0%, #b1ad99 40%, #74704b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

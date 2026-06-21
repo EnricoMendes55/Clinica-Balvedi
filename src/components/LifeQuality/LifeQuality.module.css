@@ -17,7 +17,7 @@
   margin-bottom: clamp(3rem, 5vw, 4.5rem);
 }
 
-.header .section-subtitle { margin: 0 auto; }
+.header :global(.section-subtitle) { margin: auto 0; }
 
 .heroQuote {
   background: linear-gradient(135deg, rgba(116,112,75,0.08) 0%, rgba(177,173,153,0.05) 100%);

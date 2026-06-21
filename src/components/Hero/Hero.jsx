@@ -111,8 +111,8 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1 className={s.title} {...fadeUp(0.3)}>
-            Sua saúde é{' '}
-            <span className={s.titleAccent}>nossa maior<br />dedicação</span>
+            <span className={s.titleLight}>Sua saúde é nossa</span><br />
+            <span className={s.titleAccent}>Maior dedicação</span>
           </motion.h1>
 
           <motion.p className={s.description} {...fadeUp(0.45)}>
