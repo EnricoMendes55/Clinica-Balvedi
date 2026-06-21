@@ -263,6 +263,18 @@ ul, ol {
 }
 
 /* ===========================
+   Section subtitle centering
+   =========================== */
+
+#especialistas .section-subtitle,
+#servicos .section-subtitle,
+#planos .section-subtitle,
+#qualidade-de-vida .section-subtitle,
+#faq .section-subtitle {
+  margin: 0 auto;
+}
+
+/* ===========================
    Transitions for theme
    =========================== */
 
