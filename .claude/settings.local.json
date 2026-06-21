@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(chromium-cli --session clinica)",
+      "Bash(curl -sf http://localhost:5173)",
+      "PowerShell(Start-Process \"http://localhost:5173\")",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ]
+  }
+}
