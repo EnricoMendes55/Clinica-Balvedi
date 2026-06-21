@@ -10,7 +10,16 @@
       "Skill(update-config:*)",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(gh run *)",
+      "Bash(curl -s \"https://api.github.com/repos/EnricoMendes55/Clinica-Balvedi/actions/runs?per_page=3\")",
+      "Bash(python3 -c \"import sys,json; data=json.load\\(sys.stdin\\); [print\\(r['name'], r['status'], r['conclusion'], r['html_url']\\) for r in data.get\\('workflow_runs',[]\\)]\")",
+      "PowerShell($r = Invoke-RestMethod \"https://api.github.com/repos/EnricoMendes55/Clinica-Balvedi/actions/runs?per_page=3\"; $r.workflow_runs | Select-Object name, status, conclusion, html_url | Format-List)",
+      "PowerShell($jobs = Invoke-RestMethod \"https://api.github.com/repos/EnricoMendes55/Clinica-Balvedi/actions/runs/27911858571/jobs\"; $jobs.jobs | ForEach-Object { Write-Host \"Job: $\\($_.name\\) - $\\($_.conclusion\\)\"; $_.steps | ForEach-Object { if \\($_.conclusion -eq 'failure'\\) { Write-Host \"  FAILED step: $\\($_.name\\)\" } } })",
+      "PowerShell($logs = Invoke-RestMethod \"https://api.github.com/repos/EnricoMendes55/Clinica-Balvedi/actions/runs/27911858571/jobs\"; $deploy = $logs.jobs | Where-Object { $_.name -eq 'deploy' }; $deploy.steps | Format-List name, conclusion, number)",
+      "PowerShell(Set-Location \"c:\\\\Users\\\\Enrico\\\\Documents\\\\Projetos\\\\Clínica Balvedi\"; Invoke-RestMethod -Method POST -Uri \"https://api.github.com/repos/EnricoMendes55/Clinica-Balvedi/actions/runs/27911858571/rerun\" -Headers @{ Authorization = \"token $\\(git config --global github.token 2>$null\\)\" } 2>&1)",
+      "Bash(curl -s \"https://api.github.com/repos/EnricoMendes55/Clinica-Balvedi/actions/runs?per_page=1\")"
     ]
   }
 }

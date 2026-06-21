@@ -1,3 +1,4 @@
+import { imgUrl } from '../../utils/assets'
 import s from './Footer.module.css'
 
 function scrollTo(id) {
@@ -61,7 +62,7 @@ export default function Footer() {
         <div className={s.top}>
           <div className={s.brand}>
             <a href="#hero" className={s.logo} onClick={e => { e.preventDefault(); scrollTo('hero') }}>
-              <img src="/img/Logo Balvedi.png" alt="Logo Clínica Balvedi" />
+              <img src={imgUrl('Logo Balvedi.png')} alt="Logo Clínica Balvedi" />
               <span className={s.logoText}>Clínica <span>Balvedi</span></span>
             </a>
             <p className={s.brandDesc}>

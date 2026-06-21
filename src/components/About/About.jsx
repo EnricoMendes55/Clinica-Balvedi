@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { imgUrl } from '../../utils/assets'
 import s from './About.module.css'
 
 const cards = [
@@ -22,7 +23,7 @@ export default function About() {
           <div className={s.imageStack}>
             <img
               className={s.imgMain}
-              src="/img/Logo Balvedi.jpg"
+              src={imgUrl('Logo Balvedi.jpg')}
               alt="Clínica Balvedi"
               loading="lazy"
             />

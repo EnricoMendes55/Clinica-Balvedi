@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from '../../context/ThemeContext'
+import { imgUrl } from '../../utils/assets'
 import s from './Navbar.module.css'
 
 const links = [
@@ -35,7 +36,7 @@ export default function Navbar() {
     <header className={`${s.navbar} ${scrolled ? s.scrolled : ''}`}>
       <div className={`container ${s.inner}`}>
         <a href="#hero" className={s.logo} onClick={e => { e.preventDefault(); scrollTo('hero') }}>
-          <img src="/img/Logo Balvedi.png" alt="Logo Clínica Balvedi" />
+          <img src={imgUrl('Logo Balvedi.png')} alt="Logo Clínica Balvedi" />
           <span className={s.logoText}>Clínica <span>Balvedi</span></span>
         </a>
 

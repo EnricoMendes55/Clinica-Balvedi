@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { imgUrl } from '../../utils/assets'
 import s from './ChatBot.module.css'
 
 const STEPS = {
@@ -128,7 +129,7 @@ export default function ChatBot() {
           >
             <div className={s.chatHeader}>
               <div className={s.chatHeaderInfo}>
-                <img className={s.avatarImg} src="/img/Logo Balvedi.png" alt="Assistente Balvedi" />
+                <img className={s.avatarImg} src={imgUrl('Logo Balvedi.png')} alt="Assistente Balvedi" />
                 <div>
                   <p className={s.chatName}>Assistente Balvedi</p>
                   <p className={s.chatStatus}>● Online agora</p>

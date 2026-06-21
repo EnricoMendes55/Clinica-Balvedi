@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { imgUrl } from '../../utils/assets'
 import s from './Hero.module.css'
 
 const fadeUp = (delay = 0) => ({
@@ -73,7 +74,7 @@ export default function Hero() {
           <div className={s.imageGrid}>
             <div className={s.imgCard}>
               <img
-                src="/img/Michel.jpg"
+                src={imgUrl('Michel.jpg')}
                 alt="Dr. Michel Balvedi — Médico"
                 loading="eager"
               />
@@ -84,7 +85,7 @@ export default function Hero() {
             </div>
             <div className={s.imgCard}>
               <img
-                src="/img/Larissa.webp"
+                src={imgUrl('Larissa.webp')}
                 alt="Dra. Larissa Balvedi — Nutricionista"
                 loading="eager"
               />
@@ -95,7 +96,7 @@ export default function Hero() {
             </div>
             <div className={s.imgCard}>
               <div className={s.logoCard}>
-                <img src="/img/Logo Balvedi.png" alt="Logo Clínica Balvedi" />
+                <img src={imgUrl('Logo Balvedi.png')} alt="Logo Clínica Balvedi" />
                 <p>Clínica Balvedi</p>
               </div>
             </div>

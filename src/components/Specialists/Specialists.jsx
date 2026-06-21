@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
+import { imgUrl } from '../../utils/assets'
 import s from './Specialists.module.css'
 
 const specialists = [
   {
     name: 'Dr. Michel Balvedi',
     role: 'Médico — Medicina Integrativa',
-    photo: '/img/Michel.jpg',
+    photo: imgUrl('Michel.jpg'),
     bio: 'Médico especialista em medicina integrativa e longevidade, Dr. Michel Balvedi combina o rigor da medicina baseada em evidências com uma abordagem humanizada. Pós-graduado em nutrologia e medicina do estilo de vida, ele acredita que cada paciente é único e merece um protocolo personalizado.',
     credentials: ['CRM 123456', 'Medicina Integrativa', 'Nutrologia', 'Longevidade'],
     instagram: 'https://www.instagram.com/drmichelbalvedi/',
@@ -14,7 +15,7 @@ const specialists = [
   {
     name: 'Dra. Larissa Balvedi',
     role: 'Nutricionista — Nutrição Funcional',
-    photo: '/img/Larissa.webp',
+    photo: imgUrl('Larissa.webp'),
     bio: 'Nutricionista especializada em nutrição funcional e comportamento alimentar, Dra. Larissa Balvedi transforma a relação das pessoas com a comida. Com formação em nutrição clínica e fitoterápicos, ela desenvolve planos alimentares que respeitam a individualidade e promovem saúde de dentro para fora.',
     credentials: ['CRN 654321', 'Nutrição Funcional', 'Comportamento Alimentar', 'Fitoterápicos'],
     instagram: 'https://www.instagram.com/larissabalvedi/',
