@@ -36,8 +36,13 @@ export default function Navbar() {
     <header className={`${s.navbar} ${scrolled ? s.scrolled : ''}`}>
       <div className={`container ${s.inner}`}>
         <a href="#hero" className={s.logo} onClick={e => { e.preventDefault(); scrollTo('hero') }}>
-          <img src={imgUrl('Logo Balvedi.png')} alt="Logo Clínica Balvedi" />
-          <span className={s.logoText}>Clínica <span>Balvedi</span></span>
+          <div className={s.logoImgWrap}>
+            <img src={imgUrl('Logo Balvedi.png')} alt="Logo Clínica Balvedi" />
+          </div>
+          <div className={s.logoText}>
+            <span className={s.logoName}>Clínica <span>Balvedi</span></span>
+            <span className={s.logoSub}>Medicina &amp; Nutrição</span>
+          </div>
         </a>
 
         <nav className={s.nav} aria-label="Navegação principal">
